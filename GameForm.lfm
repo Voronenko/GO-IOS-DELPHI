@@ -1,0 +1,205 @@
+object frmGame: TfrmGame
+  Left = 0
+  Top = 0
+  Caption = 'XO Game Demo'
+  ClientHeight = 480
+  ClientWidth = 320
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object pnlNotification: TPanel
+    Align = alTop
+    Width = 320.000000000000000000
+    Height = 57.000000000000000000
+    TabOrder = 0
+    object lblNotification: TLabel
+      Align = alClient
+      Width = 320.000000000000000000
+      Height = 57.000000000000000000
+      TabOrder = 0
+      Font.Size = 24.000000000000000000
+      TextAlign = taCenter
+    end
+  end
+  object pnlGamePane: TPanel
+    Align = alClient
+    Position.Point = '(0,57)'
+    Width = 320.000000000000000000
+    Height = 423.000000000000000000
+    TabOrder = 1
+    object glButtons: TGridLayout
+      Align = alClient
+      Width = 320.000000000000000000
+      Height = 320.000000000000000000
+      ItemHeight = 105.000000000000000000
+      ItemWidth = 105.000000000000000000
+      Orientation = orHorizontal
+      object f11: TButton
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 0
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f11'
+        object RoundAnimationf11: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f12: TButton
+        Position.Point = '(105,0)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 1
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f12'
+        object RoundAnimationf12: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f13: TButton
+        Position.Point = '(210,0)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 2
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f13'
+        object RoundAnimationf13: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f21: TButton
+        Position.Point = '(0,105)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 3
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f21'
+        object RoundAnimationf21: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f22: TButton
+        Position.Point = '(105,105)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 4
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f22'
+        object RoundAnimationf22: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f23: TButton
+        Position.Point = '(210,105)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 5
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f23'
+        object RoundAnimationf23: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f31: TButton
+        Position.Point = '(0,210)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 6
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f31'
+        object RoundAnimationf31: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f32: TButton
+        Position.Point = '(105,210)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 7
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f32'
+        object RoundAnimationf32: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+      object f33: TButton
+        Position.Point = '(210,210)'
+        Width = 105.000000000000000000
+        Height = 105.000000000000000000
+        OnClick = FieldClick
+        TabOrder = 8
+        Font.Size = 48.000000000000000000
+        Font.Style = [fsBold]
+        Text = 'f33'
+        object RoundAnimationf33: TFloatAnimation
+          Duration = 1.000000000000000000
+          Trigger = 'IsMouseOver=true'
+          StopValue = 360.000000000000000000
+          PropertyName = 'RotationAngle'
+        end
+      end
+    end
+    object Panel1: TPanel
+      Align = alBottom
+      Position.Point = '(0,320)'
+      Width = 320.000000000000000000
+      Height = 103.000000000000000000
+      TabOrder = 1
+      object btnPlayX: TButton
+        Position.Point = '(10,32)'
+        Width = 80.000000000000000000
+        Height = 22.000000000000000000
+        OnClick = btnPlayXClick
+        TabOrder = 0
+        Text = 'Play X'
+      end
+      object btnplayO: TButton
+        Position.Point = '(223,34)'
+        Width = 80.000000000000000000
+        Height = 22.000000000000000000
+        OnClick = btnplayOClick
+        TabOrder = 1
+        Text = 'Play O'
+      end
+    end
+  end
+end
