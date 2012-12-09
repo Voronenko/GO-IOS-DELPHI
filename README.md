@@ -170,7 +170,8 @@ end;
 
 ## Game in action
  Let's test game in action:
- 
+ <img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/4_6game.jpg"/>
+ You can neither compile the solution, or check some images <a href="https://github.com/Voronenko/GO-IOS-DELPHI/tree/master/_readme" target="_blank">under this link (images 4_1 .. 4_6)</a>
 
 
 #Exporting to Mac
@@ -178,12 +179,30 @@ end;
 So we were able to see our game in action, but on windows.
 In order to port project to Mac's XCode there is a special utility that needs to be configured in a following manner: 
 
+<table>
+  <tr>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/5_1dpr2xcode.jpg" alt=""/></td>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/5_2dpr2xcode.jpg" alt=""/></td>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/5_3dpr2xcode.jpg" alt=""/></td>   
+  </tr>
+</table>
+
+
 As a result of execution new folder titled 'XCode' can be found in the project. It contains XCode project file that you can open under Mac.
+<table>
+  <tr>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/5_4dpr2xcode.jpg" alt=""/></td>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/5_5dpr2xcode.jpg" alt=""/></td>
+  </tr>
+</table>
+
 
 Also conversion utility appears to be coded poor:
 
+<img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/6_networkfault.jpg" alt=""/>
 
-I have spent more than 20 minutes with SysInternals Filemon to detect what the issue was.
+
+I have spent more than 20 minutes with SysInternals Filemon to detect what the issue was - network drives are not supported.
 
 
 
@@ -192,6 +211,15 @@ I have spent more than 20 minutes with SysInternals Filemon to detect what the i
 First try and first issue:  I have failed to compile project under Mac, as XCode implementation of TPoint does not contain constructor taking two arguments x,y. What's a pity! 
 I had to implement my own TXOPoint instead. The product costing $3K could warn me on such problems during porting, couldn't it?
 Good moment: I had no issues to run project in emulator after TXOPoint implementation.
+
+<table>
+  <tr>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/7_1xcode.jpg" alt=""/></td>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/7_2xcode.jpg" alt=""/></td>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/7_3xcode.jpg" alt=""/></td>   
+  </tr>
+</table>
+
 
 
 In order to deploy application to live device you need a developer certificate (cost is > $100 / year).
@@ -202,6 +230,14 @@ is not IOS5)
 
 
 After several simple steps we have application on the IPhone:
+
+<table>
+  <tr>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/8_3ipa.jpg" alt=""/></td>
+    <td><img src="https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/9_1phone.PNG" alt=""/></td>
+  </tr>
+</table>
+
  
 
 
