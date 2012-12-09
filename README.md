@@ -48,6 +48,17 @@ In order to develop an application for IOS platform - you have to select special
 We see a typical Delphi project have been created: one form looking like IPhone surface.
 
 
+<table>
+  <tr>
+    <td>![New Project](https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/1_newproject.jpg "New Project")</td>
+    <td>![Form view](https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/2_formview.jpg "Form view")</td>
+    <td>![Form with controls](https://raw.github.com/Voronenko/GO-IOS-DELPHI/master/_readme/3_formwithbuttons.jpg "Form with controls")</td>   
+  </tr>
+</table>
+
+
+
+
 #Using the code
 
 Time to code the game. Typical approach for such game expects using the MiniMax strategy http://en.wikipedia.org/wiki/Minimax
